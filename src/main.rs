@@ -2,7 +2,7 @@ use warp::Filter;
 
 #[tokio::main]
 async fn main() {
-    let contacts = warp::path!("contacts" / String)
+    let contacts = warp::path!( "api" / "contacts" / String)
         .map(|source: String| 
             match source.as_str() {
                 "mail" => "t.bikbaev@gmail.com",
