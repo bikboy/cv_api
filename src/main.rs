@@ -2,13 +2,25 @@ use warp::Filter;
 
 #[tokio::main]
 async fn main() {
-    let contacts = warp::path!( "api" / "contacts" / String)
+    // struct contact {
+    //     mail: String,
+    //     skype: String,
+    //     phone: String,
+    //     telegram: String
+    // }
+    // let c = contact {
+    //     mail: String::from("t.bikbaev@gmail.com"),
+    //     skype: String::from("tim.bikbaev"),
+    //     phone: String::from("+380671014882"),
+    //     telegram: String::from("@t_bikbaev")
+    // };
+    let contacts = warp::path!( "api" / String)
         .map(|source: String| 
             match source.as_str() {
-                "mail" => "t.bikbaev@gmail.com",
-                "skype" => "tim.bikbaev",
-                "phone" => "+380671014882",
-                "telegram" => "@t_bikbaev",
+                "contacts" => "{\"mail\": \"t.bikbaev@gmail.com\",
+\"skype\": \"tim.bikbaev\",
+\"phone\": \"+380671014882\",
+\"telegram\": \"@t_bikbaev\"}",
                 _ => "Not found"
             });
 
