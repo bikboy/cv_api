@@ -23,7 +23,14 @@ async fn main() {
 \"telegram\": \"@t_bikbaev\"}",
                 _ => "Not found"
             });
-
+    let cors = warp::cors()
+        .allow_any_origin()
+        .allow_headers(vec!["User-Agent", "Sec-Fetch-Mode", "Referer", "Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers"])
+        .allow_methods(vec!["GET", "POST", "DELETE"]);
+        
+    let route = warp::any()
+        .map(warp::reply)
+        .with(cors);
     warp::serve(contacts)
         .run(([0, 0, 0, 0], 5000))
         .await;

@@ -1,0 +1,6 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "helm.fullname" . }}-configmap
+data:
+{{ .Files.Get (printf "configmap.%s.yaml" .Values.global.env) | indent 2 }}

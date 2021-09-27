@@ -1,0 +1,67 @@
+# Default values for helm.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+global:
+  env: default
+
+replicaCount: 1
+
+image:
+  repository: timber/cv_api
+  tag: arm
+  pullPolicy: Always
+
+
+nameOverride: ""
+fullnameOverride: ""
+
+
+service:
+  name: http
+  type: ClusterIP
+  port: 80
+  targetPort: 5000
+ports:
+  - name: http
+    internalPort: 5000
+
+ingress:
+  enabled: false
+  annotations: 
+    kubernetes.io/ingress.class: traefik
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    traefik.ingress.kubernetes.io/router.tls: "true"
+    #nginx.ingress.kubernetes.io/proxy-connect-timeout: "600"
+    #nginx.ingress.kubernetes.io/proxy-send-timeout: "600"
+    #nginx.ingress.kubernetes.io/proxy-read-timeout: "600"
+    #nginx.ingress.kubernetes.io/rewrite-target: /$2
+    #nginx.ingress.kubernetes.io/auth-type: basic
+    #nginx.ingress.kubernetes.io/auth-secret: auth-secret
+    #nginx.ingress.kubernetes.io/auth-realm: "Authentication Required"
+    #kubernetes.io/tls-acme: "true"
+  path: /api
+  hosts:
+    - timur.fun
+  tls: 
+    - secretName: timur-cert
+      hosts:
+        - timur.fun
+
+resources: {}
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.a  limits:
+  #    cpu: 200m
+  #  memory: 32Mi
+  #requests:
+  #  cpu: 100m
+  #  memory: 8Mi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
