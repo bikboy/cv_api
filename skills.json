@@ -1,0 +1,12 @@
+{
+    "clouds": [
+        "AWS",
+        "GCP",
+        "Azure"
+    ],
+    "kubernetes": [
+        "on prem",
+        "EKS",
+        "AKS"
+    ]
+}
