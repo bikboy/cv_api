@@ -6,7 +6,7 @@ use std::io::Read;
 #[tokio::main]
 async fn main() {
     let mut contacts_file = File::open("contacts.json").unwrap();
-    let mut skills_file = File::open("skills.json").unwrap();
+    let mut skills_file = File::open("skillsv2.json").unwrap();
     let mut contacts_data = String::new();
     let mut skills_data = String::new();
     contacts_file.read_to_string(&mut contacts_data).unwrap();
