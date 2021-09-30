@@ -35,6 +35,106 @@
         {
             "category" : "kubernetes",
             "name" : "fluxcd"
+        },
+        {
+            "category" : "iaac",
+            "name" : "terraform"
+        },
+        {
+            "category" : "iaac",
+            "name" : "pulumi"
+        },
+        {
+            "category" : "iaac",
+            "name" : "cloudformation"
+        },
+        {
+            "category" : "iaac",
+            "name" : "azure ARM"
+        },
+        {
+            "category" : "ci",
+            "name" : "azure devops"
+        },
+        {
+            "category" : "ci",
+            "name" : "gitlabci"
+        },
+        {
+            "category" : "ci",
+            "name" : "jenkins"
+        },
+        {
+            "category" : "ci",
+            "name" : "circleci"
+        },
+        {
+            "category" : "ci",
+            "name" : "concourseci"
+        },
+        {
+            "category" : "ci",
+            "name" : "drone.io"
+        },
+        {
+            "category" : "scripting",
+            "name" : "rust"
+        },
+        {
+            "category" : "scripting",
+            "name" : "python"
+        },
+        {
+            "category" : "scripting",
+            "name" : "powershell"
+        },
+        {
+            "category" : "scripting",
+            "name" : "bash"
+        },
+        {
+            "category" : "scripting",
+            "name" : "javascript"
+        },
+        {
+            "category" : "monitoring",
+            "name" : "prometheus"
+        },
+        {
+            "category" : "monitoring",
+            "name" : "newrelic"
+        },
+        {
+            "category" : "monitoring",
+            "name" : "cloudwatch"
+        },
+        {
+            "category" : "monitoring",
+            "name" : "ELK"
+        },
+        {
+            "category" : "monitoring",
+            "name" : "sentry"
+        },
+        {
+            "category" : "db",
+            "name" : "postgresql"
+        },
+        {
+            "category" : "db",
+            "name" : "mongodb"
+        },
+        {
+            "category" : "db",
+            "name" : "elasticsearch"
+        },
+        {
+            "category" : "db",
+            "name" : "clickhouse"
+        },
+        {
+            "category" : "db",
+            "name" : "mysql"
         }
     ]
 }
