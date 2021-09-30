@@ -1,0 +1,40 @@
+{"skills":
+    [
+        {
+            "category" : "clouds",
+            "name" : "AWS"
+        },
+        {
+            "category" : "clouds",
+            "name" : "GCP"
+        },
+        {
+            "category" : "clouds",
+            "name" : "Azure"
+        },
+        {
+            "category" : "kubernetes",
+            "name" : "on-prem"
+        },
+        {
+            "category" : "kubernetes",
+            "name" : "EKS"
+        },
+        {
+            "category" : "kubernetes",
+            "name" : "AKS"
+        },
+        {
+            "category" : "kubernetes",
+            "name" : "helm"
+        },
+        {
+            "category" : "kubernetes",
+            "name" : "istio"
+        },
+        {
+            "category" : "kubernetes",
+            "name" : "fluxcd"
+        }
+    ]
+}
