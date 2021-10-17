@@ -1,0 +1,145 @@
+{
+    "experience": [
+        {
+            "period": "Oct-2019 - present day",
+            "name": "Devops Engineer, Globallogic",
+            "project": "application for microscope",
+            "role": "Devops engineer",
+            "participation": [
+                {
+                    "duty": "microservices development and deployment"
+                },
+                {
+                    "duty": "Azure"
+                },
+                {
+                    "duty": "GCP"
+                },
+                {
+                    "duty": "kubernetes, helm"
+                },
+                {
+                    "duty": "CI/CD (Azure devops)"
+                },
+                {
+                    "duty": "Processes automation"
+                },
+                {
+                    "duty": "infrastructure as a code (terraform)"
+                },
+                {
+                    "duty": "Monitoring"
+                }
+            ],
+            "environment": "On-prem k8s, Azure, GCP"
+        },
+        {
+            "period": "Dec-2017 – Oct-2019",
+            "name": "Devops Engineer, Slate",
+            "project": "mobile app for gas stations",
+            "role": "Devops engineer",
+            "participation": [
+                {
+                    "duty": "AWS"
+                },
+                {
+                    "duty": "GCP"
+                },
+                {
+                    "duty":"kubernetes, helm"
+                },
+                {
+                    "duty": "CI/CD (gitlab CI)"
+                },
+                {
+                    "duty": "Processes automation"
+                },
+                {
+                    "duty": "Container orchestration(rancher)"
+                },
+                {
+                    "duty": "Monitoring"
+                }
+            ],
+            "environment": "AWS,rancher,JS,mongo,postgres,keycloak"
+        },
+        {
+            "period": "Dec-2016 – Dev-2017",
+            "name": "Devops Engineer, Ciklum",
+            "project": "mobile social network",
+            "role":"Devops engineer",
+            "participation": [
+                {
+                    "duty": "AWS"
+                },
+                {
+                    "duty": "GCP"
+                },
+                {
+                    "duty": "kubernetes"
+                },
+                {
+                    "duty": "CI/CD (github+Jenkins)"
+                },
+                {
+                    "duty":"Processes automation"
+                },
+                {
+                    "duty": "New software implementation"
+                },
+                {
+                    "duty": "Monitoring"
+                }
+            ],
+            "environment": "AWS,nginx,php,mysql"
+        },
+        {
+            "period": "Dec-2015 – Dec-2016",
+            "name": "Devops Engineer, EPAM",
+            "project": "part of INFRA team",
+            "role":"Devops engineer",
+            "participation": [
+                {
+                    "duty": "Deployments"
+                },
+                {
+                    "duty": "Processes automation"
+                },
+                {
+                    "duty": "New software implementation"
+                },
+                {
+                    "duty": "Monitoring"
+                }
+            ],
+            "environment": "JavaEE,weblogic,tomcat,RHEL"
+        },
+        {
+            "period": "Aug-2011 – Dec-2015",
+            "name": "Devops Engineer/L3 Tech support/Developer, JSC Platinum Bank",
+            "project": "Development and implementation of network, VoIP, DWH, BI, CRM infrastructure",
+            "role":"Devops engineer",
+            "participation": [
+                {
+                    "duty": "Performed technical audit and provided consultancy to project team as of system health monitoring and application performance solutions implemented"
+                },
+                {
+                    "duty": "Analyzed and improved backup and restore processes"
+                },
+                {
+                    "duty": "upporting of network, VoIP, DWH, BI, CRM infrastructure"
+                },
+                {
+                    "duty": "New telephony services development for operation department"
+                },
+                {
+                    "duty": "Maintance of existing DWH BI infrastructure,development of new BI objects"
+                },
+                {
+                    "duty": "Support of external banking web application(Barracuda equipment)"
+                }
+            ],
+            "environment": "Asterisk, various Cisco equipment, Oracle BI, Oracle Siebel, Microsoft SSRS/SSIS/SSAS/DB, Mediatel, LAMP,Cisco UCM,Cisco CME"
+        }
+    ]
+}
